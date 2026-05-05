@@ -11,21 +11,21 @@ import AvailabilityCalendar from '~/components/AvailabilityCalendar.astro';
 
 import ImageCarousel from '~/components/ImageCarousel.astro';
 
-import bergblick_1 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-1.jpg';
-import bergblick_2 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-2.jpg';
-import bergblick_3 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-3.jpg';
-import bergblick_4 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-4.jpg';
-import bergblick_5 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-5.jpg';
-import bergblick_6 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-6.jpg';
-import bergblick_7 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-7.jpg';
-import bergblick_8 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-8.jpg';
+import alpenblick_1 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-1.jpg';
+import alpenblick_2 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-2.jpg';
+import alpenblick_3 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-3.jpg';
+import alpenblick_4 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-4.jpg';
+import alpenblick_5 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-5.jpg';
+import alpenblick_6 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-6.jpg';
+import alpenblick_7 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-7.jpg';
+import alpenblick_8 from '~/assets/images/apartments/alpenpanorama/alpenpanorama-8.jpg';
 
-import alpenblick_1 from '~/assets/images/apartments/bergwiese/bergwiese-1.jpg';
-import alpenblick_2 from '~/assets/images/apartments/bergwiese/bergwiese-2.jpg';
-import alpenblick_3 from '~/assets/images/apartments/bergwiese/bergwiese-3.jpg';
-import alpenblick_4 from '~/assets/images/apartments/bergwiese/bergwiese-4.jpg';
-import alpenblick_5 from '~/assets/images/apartments/bergwiese/bergwiese-5.jpg';
-import alpenblick_6 from '~/assets/images/apartments/bergwiese/bergwiese-6.jpg';
+import bergblick_1 from '~/assets/images/apartments/bergwiese/bergwiese-1.jpg';
+import bergblick_2 from '~/assets/images/apartments/bergwiese/bergwiese-2.jpg';
+import bergblick_3 from '~/assets/images/apartments/bergwiese/bergwiese-3.jpg';
+import bergblick_4 from '~/assets/images/apartments/bergwiese/bergwiese-4.jpg';
+import bergblick_5 from '~/assets/images/apartments/bergwiese/bergwiese-5.jpg';
+import bergblick_6 from '~/assets/images/apartments/bergwiese/bergwiese-6.jpg';
 
 import lh1 from '~/assets/images/landhaus/bauernhof-01.jpg';
 import lh2 from '~/assets/images/landhaus/bauernhof-02.jpg';
@@ -34,17 +34,6 @@ import lh4 from '~/assets/images/landhaus/bauernhof-04.jpg';
 import lh5 from '~/assets/images/landhaus/bauernhof-05.jpg';
 import lh6 from '~/assets/images/landhaus/bauernhof-06.jpg';
 
-const bergblickImages = [
-  { src: bergblick_1, alt: 'Bergblick 1' },
-  { src: bergblick_2, alt: 'Bergblick 2' },
-  { src: bergblick_3, alt: 'Bergblick 3' },
-  { src: bergblick_4, alt: 'Bergblick 4' },
-  { src: bergblick_5, alt: 'Bergblick 5' },
-  { src: bergblick_6, alt: 'Bergblick 6' },
-  { src: bergblick_7, alt: 'Bergblick 7' },
-  { src: bergblick_8, alt: 'Bergblick 8' },
-];
-
 const alpenblickImages = [
   { src: alpenblick_1, alt: 'Alpenblick 1' },
   { src: alpenblick_2, alt: 'Alpenblick 2' },
@@ -52,6 +41,17 @@ const alpenblickImages = [
   { src: alpenblick_4, alt: 'Alpenblick 4' },
   { src: alpenblick_5, alt: 'Alpenblick 5' },
   { src: alpenblick_6, alt: 'Alpenblick 6' },
+  { src: alpenblick_7, alt: 'Alpenblick 7' },
+  { src: alpenblick_8, alt: 'Alpenblick 8' },
+];
+
+const bergblickImages = [
+  { src: bergblick_1, alt: 'Bergblick 1' },
+  { src: bergblick_2, alt: 'Bergblick 2' },
+  { src: bergblick_3, alt: 'Bergblick 3' },
+  { src: bergblick_4, alt: 'Bergblick 4' },
+  { src: bergblick_5, alt: 'Bergblick 5' },
+  { src: bergblick_6, alt: 'Bergblick 6' },
 ];
 
 const landhausImages = [
@@ -124,47 +124,49 @@ const metadata = {
 
       <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         <div class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-gray-200 dark:border-slate-700">
-          <ImageCarousel images={bergblickImages} id="bergblick" />
+          <ImageCarousel images={alpenblickImages} id="alpenblick" />
           <div class="p-5">
-            <h3 class="text-xl font-bold mb-2 dark:text-white">Bergblick</h3>
+            <h3 class="text-xl font-bold mb-2 dark:text-white">Alpenblick</h3>
             <p class="text-sm text-muted dark:text-slate-400 mb-3"></p>
-            <p class="text-sm font-semibold text-primary mb-3">Ab 60 € / Nacht (1-2 Pers.) · inkl. 7 % USt</p>
+            <p class="text-sm font-semibold text-primary mb-3">Ab 75 € / Nacht (1-2 Pers.) · inkl. 7 % USt</p>
             <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-muted dark:text-slate-400 mb-4">
               <span class="flex items-center gap-1"><Icon name="tabler:sofa" class="w-3.5 h-3.5" /> Wohnzimmer</span>
               <span class="flex items-center gap-1"><Icon name="tabler:bed" class="w-3.5 h-3.5" /> Schlafzimmer</span>
               <span class="flex items-center gap-1"><Icon name="tabler:bed-flat" class="w-3.5 h-3.5" /> Doppelbett</span>
-              <span class="flex items-center gap-1"><Icon name="tabler:tools-kitchen-2" class="w-3.5 h-3.5" /> Küchenzeile</span>
+              <span class="flex items-center gap-1"><Icon name="tabler:bed" class="w-3.5 h-3.5" /> Einzelbett</span>
+              <span class="flex items-center gap-1"><Icon name="tabler:flame" class="w-3.5 h-3.5" /> Kamin</span>
+              <span class="flex items-center gap-1"><Icon name="tabler:tools-kitchen-2" class="w-3.5 h-3.5" /> Küche</span>
               <span class="flex items-center gap-1"><Icon name="tabler:bath" class="w-3.5 h-3.5" /> Bad</span>
               <span class="flex items-center gap-1"><Icon name="tabler:droplet" class="w-3.5 h-3.5" /> Dusche</span>
-              <span class="flex items-center gap-1"><Icon name="tabler:bath" class="w-3.5 h-3.5" /> Badewanne</span>
               <span class="flex items-center gap-1"><Icon name="tabler:toilet-paper" class="w-3.5 h-3.5" /> WC</span>
+              <span class="flex items-center gap-1"><Icon name="tabler:device-tv" class="w-3.5 h-3.5" /> Fernseher</span>
               <span class="flex items-center gap-1"><Icon name="tabler:smoking-no" class="w-3.5 h-3.5" /> Nichtraucher-Wohnung</span>
               <span class="flex items-center gap-1"><Icon name="tabler:device-tv" class="w-3.5 h-3.5" /> TV</span>
               <span class="flex items-center gap-1"><Icon name="tabler:wifi" class="w-3.5 h-3.5" /> WLAN</span>
             </div>
-            <AvailabilityCalendar apartment="bergblick" id="bergblick" />
+            <AvailabilityCalendar apartment="alpenblick" id="alpenblick" />
             <div class="mt-4 border-t border-gray-200 dark:border-slate-700 pt-4">
               <div class="flex flex-wrap gap-3 mb-3">
                 <div>
-                  <label for="bfw-pc-checkin-bergblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Anreise</label>
-                  <input type="date" id="bfw-pc-checkin-bergblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
+                  <label for="bfw-pc-checkin-alpenblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Anreise</label>
+                  <input type="date" id="bfw-pc-checkin-alpenblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
                 </div>
                 <div>
-                  <label for="bfw-pc-checkout-bergblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Abreise</label>
-                  <input type="date" id="bfw-pc-checkout-bergblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
+                  <label for="bfw-pc-checkout-alpenblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Abreise</label>
+                  <input type="date" id="bfw-pc-checkout-alpenblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
                 </div>
               </div>
-              <p id="bfw-pc-date-error-bergblick" class="hidden text-xs text-red-600 mb-2">Mindestens 1 Übernachtung</p>
-              <button type="button" id="bfw-pc-cta-bergblick" disabled class="bg-secondary text-white border-secondary hover:bg-primary hover:border-primary px-4 py-2 rounded-full inline-block text-sm font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Buchungsanfrage</button>
+              <p id="bfw-pc-date-error-alpenblick" class="hidden text-xs text-red-600 mb-2">Mindestens 1 Übernachtung</p>
+              <button type="button" id="bfw-pc-cta-alpenblick" disabled class="bg-secondary text-white border-secondary hover:bg-primary hover:border-primary px-4 py-2 rounded-full inline-block text-sm font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Buchungsanfrage</button>
             </div>
 <script>
 (function() {
-  var checkinInput = document.getElementById('bfw-pc-checkin-bergblick');
-  var checkoutInput = document.getElementById('bfw-pc-checkout-bergblick');
-  var dateError = document.getElementById('bfw-pc-date-error-bergblick');
-  var ctaButton = document.getElementById('bfw-pc-cta-bergblick');
+  var checkinInput = document.getElementById('bfw-pc-checkin-alpenblick');
+  var checkoutInput = document.getElementById('bfw-pc-checkout-alpenblick');
+  var dateError = document.getElementById('bfw-pc-date-error-alpenblick');
+  var ctaButton = document.getElementById('bfw-pc-cta-alpenblick');
 
-  var APARTMENT_SLUG = 'bergblick';
+  var APARTMENT_SLUG = 'alpenblick';
   var CONTACT_PATH = '/contact';
 
   function todayStr() {
@@ -244,47 +246,47 @@ const metadata = {
         </div>
 
         <div class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-gray-200 dark:border-slate-700">
-          <ImageCarousel images={alpenblickImages} id="alpenblick" />
+          <ImageCarousel images={bergblickImages} id="bergblick" />
           <div class="p-5">
-            <h3 class="text-xl font-bold mb-2 dark:text-white">Alpenblick</h3>
+            <h3 class="text-xl font-bold mb-2 dark:text-white">Bergblick</h3>
             <p class="text-sm text-muted dark:text-slate-400 mb-3"></p>
-            <p class="text-sm font-semibold text-primary mb-3">Ab 75 € / Nacht (1-2 Pers.) · inkl. 7 % USt</p>
+            <p class="text-sm font-semibold text-primary mb-3">Ab 60 € / Nacht (1-2 Pers.) · inkl. 7 % USt</p>
             <div class="flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-muted dark:text-slate-400 mb-4">
               <span class="flex items-center gap-1"><Icon name="tabler:sofa" class="w-3.5 h-3.5" /> Wohnzimmer</span>
               <span class="flex items-center gap-1"><Icon name="tabler:bed" class="w-3.5 h-3.5" /> Schlafzimmer</span>
               <span class="flex items-center gap-1"><Icon name="tabler:bed-flat" class="w-3.5 h-3.5" /> Doppelbett</span>
-              <span class="flex items-center gap-1"><Icon name="tabler:bed" class="w-3.5 h-3.5" /> Einzelbett</span>
-              <span class="flex items-center gap-1"><Icon name="tabler:tools-kitchen-2" class="w-3.5 h-3.5" /> Küche</span>
+              <span class="flex items-center gap-1"><Icon name="tabler:tools-kitchen-2" class="w-3.5 h-3.5" /> Küchenzeile</span>
               <span class="flex items-center gap-1"><Icon name="tabler:bath" class="w-3.5 h-3.5" /> Bad</span>
               <span class="flex items-center gap-1"><Icon name="tabler:droplet" class="w-3.5 h-3.5" /> Dusche</span>
+              <span class="flex items-center gap-1"><Icon name="tabler:bath" class="w-3.5 h-3.5" /> Badewanne</span>
               <span class="flex items-center gap-1"><Icon name="tabler:toilet-paper" class="w-3.5 h-3.5" /> WC</span>
               <span class="flex items-center gap-1"><Icon name="tabler:smoking-no" class="w-3.5 h-3.5" /> Nichtraucher-Wohnung</span>
               <span class="flex items-center gap-1"><Icon name="tabler:device-tv" class="w-3.5 h-3.5" /> TV</span>
               <span class="flex items-center gap-1"><Icon name="tabler:wifi" class="w-3.5 h-3.5" /> WLAN</span>
             </div>
-            <AvailabilityCalendar apartment="alpenblick" id="alpenblick" />
+            <AvailabilityCalendar apartment="bergblick" id="bergblick" />
             <div class="mt-4 border-t border-gray-200 dark:border-slate-700 pt-4">
               <div class="flex flex-wrap gap-3 mb-3">
                 <div>
-                  <label for="bfw-pc-checkin-alpenblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Anreise</label>
-                  <input type="date" id="bfw-pc-checkin-alpenblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
+                  <label for="bfw-pc-checkin-bergblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Anreise</label>
+                  <input type="date" id="bfw-pc-checkin-bergblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
                 </div>
                 <div>
-                  <label for="bfw-pc-checkout-alpenblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Abreise</label>
-                  <input type="date" id="bfw-pc-checkout-alpenblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
+                  <label for="bfw-pc-checkout-bergblick" class="block text-xs font-medium text-muted dark:text-slate-400 mb-1">Abreise</label>
+                  <input type="date" id="bfw-pc-checkout-bergblick" class="text-sm px-3 py-2 border border-gray-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 dark:text-white" />
                 </div>
               </div>
-              <p id="bfw-pc-date-error-alpenblick" class="hidden text-xs text-red-600 mb-2">Mindestens 1 Übernachtung</p>
-              <button type="button" id="bfw-pc-cta-alpenblick" disabled class="bg-secondary text-white border-secondary hover:bg-primary hover:border-primary px-4 py-2 rounded-full inline-block text-sm font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Buchungsanfrage</button>
+              <p id="bfw-pc-date-error-bergblick" class="hidden text-xs text-red-600 mb-2">Mindestens 1 Übernachtung</p>
+              <button type="button" id="bfw-pc-cta-bergblick" disabled class="bg-secondary text-white border-secondary hover:bg-primary hover:border-primary px-4 py-2 rounded-full inline-block text-sm font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Buchungsanfrage</button>
             </div>
 <script>
 (function() {
-  var checkinInput = document.getElementById('bfw-pc-checkin-alpenblick');
-  var checkoutInput = document.getElementById('bfw-pc-checkout-alpenblick');
-  var dateError = document.getElementById('bfw-pc-date-error-alpenblick');
-  var ctaButton = document.getElementById('bfw-pc-cta-alpenblick');
+  var checkinInput = document.getElementById('bfw-pc-checkin-bergblick');
+  var checkoutInput = document.getElementById('bfw-pc-checkout-bergblick');
+  var dateError = document.getElementById('bfw-pc-date-error-bergblick');
+  var ctaButton = document.getElementById('bfw-pc-cta-bergblick');
 
-  var APARTMENT_SLUG = 'alpenblick';
+  var APARTMENT_SLUG = 'bergblick';
   var CONTACT_PATH = '/contact';
 
   function todayStr() {
@@ -447,6 +449,16 @@ const metadata = {
         title: 'Gibt es Parkmöglichkeiten?',
         description:
           'Ein kostenloser Parkplatz steht direkt am Haus zur Verfügung.',
+      },
+      {
+        title: 'Sind Haustiere erlaubt?',
+        description:
+          '25 € einmalig. Maximal 1 Hund',
+      },
+      {
+        title: 'Sind Kinder willkommen?',
+        description:
+          '15 € pro Nacht. Bis 4 Jahre',
       },
       {
         title: 'Wie kann ich buchen?',
